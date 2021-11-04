@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Final </title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav.css">
+</head>
+
+<body>
+
+  <!--Navegador-->
+  <header class="cd-auto-hide-header">
+    <div class="logo"><a href="imgs/Logo.png"><img src="imgs/Logo.png" alt="Logo"></a></div>
+  
+    <nav class="cd-primary-nav">
+      <a href="#cd-navigation" class="nav-trigger">
+        <span>
+          <em aria-hidden="true"></em>
+          Menu
+        </span>
+      </a> <!-- .nav-trigger -->
+  
+      <ul id="cd-navigation">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="Galeria.html">Galería</a></li>
+        <li><a href="Servicios.html">Servicios</a></li>
+        <li><a href="Contactanos.html">Contactanos</a></li>
+      </ul>
+    </nav> <!-- .cd-primary-nav -->
+  </header> <!-- .cd-auto-hide-header -->
+  <!--fin de Navegador-->
+  <br>
+  <br>
+
+<!--inicio slider-->
+<div class="contenedor">
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="imgs/Antony.jpg"></div>
+          <div class="swiper-slide"><img src="imgs/Nia.jpg"></div>
+          <div class="swiper-slide"><img src="imgs/Kunty.jpg"></div>
+          <div class="swiper-slide"><img src="imgs/Pau.jpg"></div>
+          <div class="swiper-slide"><img src="imgs/Margi.jpg"></div>
+          <div class="swiper-slide"><img src="imgs/Mia.jpg"></div>
+          <div class="swiper-slide"><img src="imgs/Keven.jpg"></div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+</div>
+
+<!--Javascript-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      effect: "fade",
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+<!--fin de slider-->
+
+<!-- .cd-main-content -->
+	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+<script>
+	if( !window.jQuery ) document.write('<script src="js/jquery-3.0.0.min.js"><\/script>');
+</script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+
+</body>
+
